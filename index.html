@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Мое Портфолио</title>
+    <style>
+        body {
+            background-color: #0f1115;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            color: #e5e7eb;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #1a1d23;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+        }
+
+        .header-card {
+            text-align: center;
+        }
+
+            .header-card h1 {
+                margin: 0 0 10px 0;
+                font-size: 28px;
+            }
+
+            .header-card p {
+                margin: 0;
+                color: #60a5fa;
+                font-weight: 500;
+                font-size: 16px;
+            }
+
+        .photo-grid {
+            display: flex;
+            gap: 20px;
+        }
+
+            .photo-grid img {
+                width: 50%;
+                border-radius: 12px;
+                object-fit: cover;
+                aspect-ratio: 16/9;
+                background-color: #eee;
+            }
+
+        h2 {
+            margin-top: 0;
+            font-size: 20px;
+            border-bottom: 1px solid #2a2e37;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+
+        .about-text p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+            font-size: 15px;
+        }
+
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-chip {
+            background-color: #262a33;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .project-item {
+            margin-bottom: 25px;
+        }
+
+            .project-item:last-child {
+                margin-bottom: 0;
+            }
+
+        .project-title {
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 4px;
+        }
+
+        .project-date {
+            color: #9ca3af;
+            font-size: 13px;
+            margin-bottom: 8px;
+        }
+
+        .project-desc {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .contacts p {
+            margin: 12px 0;
+            font-size: 15px;
+        }
+
+        .contacts strong {
+            display: inline-block;
+            width: 90px;
+        }
+
+        .footer {
+            text-align: center;
+            color: #9ca3af;
+            font-size: 13px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="card header-card">
+            <h1>Хохорина Карина Алексеевна</h1>
+            <p>Студентка 2 курса УлГТУ</p>
+        </div>
+
+        <div class="card">
+            <div class="photo-grid">
+                <img src="https://avatars.mds.yandex.net/get-altay/10702222/2a00000189d6703a79032aa9dc4fa27f1360/XXL_height" alt="Фото 1">
+                <img src="https://studyinrussia.ru/storage/images/university-infrastructure/211/cover/skyylUDeMiMz1yNXW2EnQag4ut25WI0RMARXMp9S_s1.webp" alt="Фото 2">
+            </div>
+        </div>
+
+        <div class="card about-text">
+            <h2>О себе</h2>
+            <p>Привет! Меня зовут Хохорина Карина. Я студентка 2-го курса, осваивающая разработку программного обеспечения и веб-технологии.</p>
+
+            <p>Интересуюсь:</p>
+            <ul>
+                <li>Созданием веб-сервисов на Python;</li>
+                <li>Изучением алгоритмов;</li>
+                <li>Математическим моделированием и современной разработкой интерфейсов.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Стек технологий и навыки</h2>
+            <div class="skills-container">
+                <span class="skill-chip">Python 3</span>
+                <span class="skill-chip">Django Framework</span>
+                <span class="skill-chip">HTML5 / CSS3</span>
+                <span class="skill-chip">Git / GitHub</span>
+                <span class="skill-chip">Blender</span>
+                <span class="skill-chip">Word, PowerPoint, Excel</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Учебные проекты</h2>
+
+            <div class="project-item">
+                <div class="project-title">Персональный сайт-визитка (Django)</div>
+                <div class="project-date">2026</div>
+                <div class="project-desc">Веб-приложение на базе Django с динамическим подключением медиафайлов, маршрутизацией через URL-паттерны и пользовательским адаптивным CSS-дизайном.</div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-title">Лабораторные работы по программированию</div>
+                <div class="project-date">2026</div>
+                <div class="project-desc">Решение алгоритмических задач, обработка массивов и матриц, работа с рекурсией и структурированием кода на Python.</div>
+            </div>
+        </div>
+
+        <div class="card contacts">
+            <h2>Контакты</h2>
+            <p><strong>Email:</strong> <a href="mailto:karinahohorina744@gmail.com" style="color: #0056b3; text-decoration: none;">karinahohorina744@gmail.com</a></p>
+            <p><strong>Telegram:</strong> <a href="https://t.me/anirox_kara" target="_blank" style="color: #0056b3; text-decoration: none;">@anirox_kara</a></p>
+            <p><strong>Github:</strong> <a href="https://github.com/anirox-k" target="_blank" style="color: #0056b3; text-decoration: none;">github.com/anirox-k</a></p>
+        </div>
+    </div>
+
+</body>
+</html>
